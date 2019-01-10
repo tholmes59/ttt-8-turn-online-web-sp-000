@@ -20,10 +20,6 @@ def valid_move?(board, index)
   position_taken?(board, index) == false && index.between?(0, 8)
 end
 
-def turn(board)
-  puts "Please enter 1-9:"
-end
-
 def position_taken?(board, index)
   if (board[index] == " " || board[index] == "" || board[index] == nil)
     taken = false
@@ -32,3 +28,6 @@ def position_taken?(board, index)
   end
 end
 
+def turn(board)
+  puts "Please enter 1-9:"
+end
